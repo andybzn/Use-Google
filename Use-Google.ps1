@@ -1,7 +1,7 @@
-#Script Name: #Use-Google
+#Script Name: Use-Google
 #Creator: Dark-Coffee
-#Version: 0.0.1
-#Updated: 28th September 2019
+#Version: 0.0.2
+#Updated: 29th September 2019
 #Url: https://github.com/dark-coffee/Use-Google
 
 function Use-Google {
