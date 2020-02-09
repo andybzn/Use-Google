@@ -19,7 +19,9 @@ Url: https://github.com/dark-coffee/Use-Google/
 
 
 function Use-Google {
-    [Parameter(Mandatory=$false)][String]$Browser
+    param(
+        [Parameter(Mandatory=$false)][String]$Browser
+    )
 
     #Get Clipboard Content
     $ClipboardContent = (Get-Clipboard) -Replace(' ','+')
