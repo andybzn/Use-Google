@@ -1,8 +1,8 @@
 <#
 Script Name: Use-Google.ps1
 Author: Dark-Coffee
-Version: 1.0.0
-Updated: 2020-02-09
+Version: 1.0.1
+Updated: 2020-02-10
 Url: https://github.com/dark-coffee/Use-Google/
 #>
 
@@ -20,7 +20,7 @@ Url: https://github.com/dark-coffee/Use-Google/
 
 function Use-Google {
     param(
-        [Parameter(Mandatory=$false)][String]$Browser
+        [Parameter(Mandatory=$false)][Switch]$Browser
     )
 
     #Get Clipboard Content
@@ -34,7 +34,7 @@ function Use-Google {
 
     if($Browser){
         #Open Link in Browser
-        Start-Process -Path "$FunctionOutput"
+        Start-Process "$FunctionOutput"
     }else{
         #Copy Output to Clipboard
         $FunctionOutput | Clip
